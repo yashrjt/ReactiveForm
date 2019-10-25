@@ -3,6 +3,7 @@
     Sign Up!
   </div>
 
+  
   <div class="card-body">
     <form novalidate
           autocomplete="off"
@@ -17,7 +18,7 @@
                  id="firstNameId"
                  type="text"
                  placeholder="First Name (required)"
-                 formControlName="firstName"
+                formControlName="firstName"
                  [ngClass]="{'is-invalid': (customerForm.get('firstName').touched || 
                                             customerForm.get('firstName').dirty) &&
                                             !customerForm.get('firstName').valid }" />
